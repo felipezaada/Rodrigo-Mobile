@@ -10,4 +10,7 @@ export default StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
     },
+    textoGrande: {
+        fontSize: 32,
+    }
 })
