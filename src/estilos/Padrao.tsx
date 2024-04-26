@@ -12,5 +12,9 @@ export default StyleSheet.create({
     },
     textoGrande: {
         fontSize: 32,
+    },
+    textoDestaque:{
+        fontSize: 32,
+        color: '#FF0000',
     }
 })

@@ -5,6 +5,21 @@ import Frag from "./components/Frag";
 import ParImpar from "./components/ParImpar";
 import Familia from "./components/relacao/Familia";
 import Membro from "./components/relacao/Membro";
+import FamiliaJson from "./components/relacao/FamiliaJson";
+import FamiliaJsonMap from "./components/relacao/FamiliaJsonMap";
+import UsuarioLogado from "./components/UsuarioLogado";
+import Botao from "./components/Botao";
+
+
+const Familia1 = [
+  {"nome": "Josefina", "sobreNome": "Josefa"},
+  {"nome": "Fininho", "sobreNome": "Josefa"}
+]
+
+const Familia2 = [
+  {"nome": "Jalim", "sobreNome": "Josefa"},
+  {"nome": "Matias", "sobreNome": "Josefa"}
+]
 
 function Nomes(nom1: string, nom2: string){
   return <Membro nome={nom1} sobreNome={nom2} />
@@ -21,13 +36,23 @@ export default class App extends Component{
       <Frag titulo="Titulo"
       subtitulo="Sub titulo" />
 
-      <ParImpar numero={20}/> */}
+      <ParImpar numero={20}/> 
 
       <Familia>
-        {Nomes("felipe", "cabeçudo")}
+        {Nomes("felipe", "cabeçudao")}
         {Nomes("rodigo", "pouças")}
       </Familia>
 
+      <FamiliaJson membros={Familia1}   />
+      <FamiliaJsonMap membros={Familia1} />
+
+      <UsuarioLogado usuario={ {"nome":'teste', "email":'teste@gmail.com'} }/>
+      <UsuarioLogado usuario={ {"nome":'teste'} }/>
+      <UsuarioLogado usuario={ {"email":'teste@gmail.com'} }/>
+      <UsuarioLogado usuario={ {} }/>
+      <UsuarioLogado usuario={ null }/> */}
+
+      <Botao />
       
       </View>
     );
