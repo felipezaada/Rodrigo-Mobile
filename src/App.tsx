@@ -9,7 +9,9 @@ import FamiliaJson from "./components/relacao/FamiliaJson";
 import FamiliaJsonMap from "./components/relacao/FamiliaJsonMap";
 import UsuarioLogado from "./components/UsuarioLogado";
 import Botao from "./components/Botao";
-
+import Contador from "./components/Contador";
+import Evento from "./components/Evento";
+import IncrementarFelipe from "./components/IncrementarFelipe";
 
 const Familia1 = [
   {"nome": "Josefina", "sobreNome": "Josefa"},
@@ -50,9 +52,15 @@ export default class App extends Component{
       <UsuarioLogado usuario={ {"nome":'teste'} }/>
       <UsuarioLogado usuario={ {"email":'teste@gmail.com'} }/>
       <UsuarioLogado usuario={ {} }/>
-      <UsuarioLogado usuario={ null }/> */}
+      <UsuarioLogado usuario={ null }/>
 
       <Botao />
+      
+      <Evento></Evento>
+
+      <IncrementarFelipe />*/}
+
+      <Contador />
       
       </View>
     );
