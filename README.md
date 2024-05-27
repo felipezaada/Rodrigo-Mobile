@@ -1,52 +1,79 @@
-# Agenda React
+This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-## Descrição do Projeto
+# Getting Started
 
-**Agenda React** é um aplicativo de agenda desenvolvido utilizando **React Native**. Este projeto foi criado como um trabalho para a disciplina de Programação de Dispositivos Mobile, ministrada pelo professor **Rodrigo de Lima**.
+>**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-O aplicativo possui um tema inspirado na Hello Kitty e utiliza o **AsyncStorage** como banco de dados para armazenar informações de usuários, incluindo funcionalidades de login e registro.
+## Step 1: Start the Metro Server
 
-## Status do Projeto
+First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
-O projeto está atualmente em fase de desenvolvimento.
+To start Metro, run the following command from the _root_ of your React Native project:
 
-## Funcionalidades
+```bash
+# using npm
+npm start
 
-- **Login e Registro de Usuários**: Permite aos usuários criar contas e fazer login no aplicativo.
-- **Banco de Dados AsyncStorage**: Utilizado para armazenar dados localmente no dispositivo.
+# OR using Yarn
+yarn start
+```
 
-## Pré-requisitos
+## Step 2: Start your Application
 
-Antes de começar, certifique-se de ter o **Node.js** e o **npm** instalados em sua máquina. Você pode baixá-los em [Node.js](https://nodejs.org/).
+Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-## Instalação
+### For Android
 
-Siga os passos abaixo para configurar e executar o projeto em sua máquina local:
+```bash
+# using npm
+npm run android
 
-1. **Clone o repositório**
+# OR using Yarn
+yarn android
+```
 
-   git clone https://github.com/seu-usuario/agenda-react.git
+### For iOS
 
-2. **Navegue até o diretório do projeto**
+```bash
+# using npm
+npm run ios
 
-   cd agenda-react
+# OR using Yarn
+yarn ios
+```
 
-3. **Instale as dependências**
+If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
-   npm install
+This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-4. **Inicie o projeto**
+## Step 3: Modifying your App
 
-   npx react-native start
+Now that you have successfully run the app, let's modify it.
 
-## Contribuições
+1. Open `App.tsx` in your text editor of choice and edit some lines.
+2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
 
-Fique à vontade para fazer correções e melhorias no projeto. Propostas de pull requests são bem-vindas!
+   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
-## Contato
+## Congratulations! :tada:
 
-Para mais informações, entre em contato com os desenvolvedores do projeto.
+You've successfully run and modified your React Native App. :partying_face:
 
-***
+### Now what?
 
-Nota: Este projeto foi desenvolvido como parte de um trabalho acadêmico e ainda está em fase de desenvolvimento. Feedbacks e contribuições são bem-vindos!
+- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
+- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+
+# Troubleshooting
+
+If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+
+# Learn More
+
+To learn more about React Native, take a look at the following resources:
+
+- [React Native Website](https://reactnative.dev) - learn more about React Native.
+- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
+- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
+- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
+- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
